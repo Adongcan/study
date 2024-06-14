@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.lixs.charts.LineChartView
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:id="@+id/linechart"
+        app:labelTextSize="10dp"
+        app:title="折线图"
+        app:titleTextSize="20dp"
+        />
+    <RadioGroup
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/rg"
+        android:background="@drawable/edittext_aroundborder"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/rb1"
+            android:text="血压"/>
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:text="血糖"/>
+
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"
+            android:text="血脂"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="标准血压值是收缩压＜120mmHg，舒张压＜80mmHg\n血糖正常值是指人空腹的时候血糖值在3.9～6.1毫摩尔/升"
+        android:textColor="@color/colorPrimary"
+        />
+</LinearLayout>

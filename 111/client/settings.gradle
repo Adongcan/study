@@ -1,0 +1,2 @@
+include ':app', ':nicevideoplayer', ':IMKit', ':IMLib'
+rootProject.name='Victe'
